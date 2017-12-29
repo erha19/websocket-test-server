@@ -38,5 +38,8 @@ server.listen(8080, function listening() {
   console.log(chalk.green(url));
   console.log('You can test websocket:')
   console.log(chalk.green(wsurl));
+  console.log('Message examples:');
+  console.log(`{"method":"WXReloadBundle", "params": "http://dotwe.org/raw/dist/135a604e06e0fb246fe098924b36bfbc.bundle.wx"}`)
+  console.log(`{"method":"WXReload"}`)
   open(url)
 });
